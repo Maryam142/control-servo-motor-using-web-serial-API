@@ -1,12 +1,11 @@
 //Definitions section:
 #include <Servo.h>
-Servo my_servo;
+Servo myServo1;
 int val=0;
 
 //setup section:
 void setup(){
-my_servo.attach(9); //define digital servo motor port pwm  number 9
-  
+myServo1.attach(9); //define digital servo motor port pwm  number 9
 Serial.begin(115200); // Number of bits the arduino can receive per second 115200 bits 
 Serial.setTimeout(10); // This is how long the arduino will wait for a message 10 milliseconds
 }
@@ -31,10 +30,9 @@ String getValue(String data, char separator, int index){
 void loop() {
 val =  getValue(computerText, '-',0).toInt(); 
 val = map (val , 0 , 1023 , 0 , 180) ;
-my_servo.write(val);
+myServo1.write(val);
 Serial.println("WORKING");
 delay(1000);
-
 }
   
   
