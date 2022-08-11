@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <title>Task 2 IOT</title>
+        <link rel="icon" type="image/x-icon" href="C:\Users\myom1\Downloads\pic1.png">
+    <style>
+
+      body{background-color: bisque;}
+
+      .shape{
+      text-align: center;
+      padding:100px 100px 100px 100px;
+      margin: 140px 40px;      
+      background-color: rgb(255, 248, 220);
+    }
+      h2{color: rgba(188, 114, 68, 0.845);}
+      button, p{
+        color:rgb(123, 52, 8);
+        font-size: 20px;
+      }
+
+    </style>
+   
+   </head> 
+    <body>
+
+      <div class="shape">
+
+        <img src="C:\Users\myom1\Downloads\pic1.png" width="190" height="190">
+       <br>
+        
+        <button id="button1"  class="btnblock" role="button" >
+          connect
+           </button>
+           <br><br>
+
+        <h2>please say "right" or "left" to moving servo motor: </h2>
+        
+        <div class="container">
+            <div class="form-group">
+            <textarea class="form-control" id="textarea" cols="25" rows="5"></textarea>
+            </div>
+            <button id="start" class="btn btn-primary btn-block">
+                Start Recording </button>
+            <p id="instructions">Press the Start Recording button</p>
+
+          </div>
+
+
+    </body>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="moving servo using serial web api.js"></script>
+                  
+    </html>
+   
