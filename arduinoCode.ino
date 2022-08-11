@@ -14,27 +14,19 @@ Serial.setTimeout(10); // This is how long the arduino will wait for a message 1
 void loop() {
 String data=Serial.readString();
 if (data.indexOf("right")>-1){
-  digitalWrite(13,HIGH):
-  delay(1000);
-  digitalWrite(13,LOW):
-    delay(1000);
   val=0;   
   Serial.println("right");
+  
   }elseif(data.indexOf("left")>-1){
      val=180;
-      digitalWrite(13,HIGH):
-        Serial.println("left"); 
+     Serial.println("left"); 
  
   }else{
-     digitalWrite(13,LOW):
      Serial.write("0");
     }
     
 myServo1.write(val);
 
 delay(1000);
-}
-  
-  
   
   
